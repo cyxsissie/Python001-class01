@@ -48,4 +48,4 @@
 + 数据分词/情感分析
 
   + jieba 学习文档：[https://github.com/fxsjy/jieba/blob/master/README.md](https://github.com/fxsjy/jieba/blob/master/README.md)
-  + ~~~~snowNLP 参考学习地址：[https://github.com/isnowfy/snownlp/blob/master/README.md](https://github.com/isnowfy/snownlp/blob/master/README.md)
+  + snowNLP 参考学习地址：[https://github.com/isnowfy/snownlp/blob/master/README.md](https://github.com/isnowfy/snownlp/blob/master/README.md)
