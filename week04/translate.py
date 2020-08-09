@@ -32,13 +32,16 @@ len(df_data.id)
 df_data[(df_data['id'] < 1000) & (df_data['age'] > 30)]
 
 # SELECT id,COUNT(DISTINCT order_id) FROM table1 GROUP BY id;
-df_table1.groupby('id').aggregate({'order_id': 'count'})
+# 两种写法
+df_table1.groupby('id').aggregate({'order_id': 'nunique'})
+# 或者
+df_table1.groupby('id')['order_id'].nunique()
 
 # SELECT * FROM table1 t1 INNER JOIN table2 t2 ON t1.id = t2.id;
 pd.merge(df_table1, df_table2, on='id')
 
 # SELECT * FROM table1 UNION SELECT * FROM table2;
-pd.concat([df_table1, df_table2])
+pd.concat([df_table1, df_table2]).drop_duplicates()
 
 # DELETE FROM table1 WHERE id=10;
 # 两种写法 
